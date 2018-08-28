@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a {
+  font-size: 1.3em;
+}
+
+li {
+  width: 150px;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #c6c9ce;
+}
+
+#welcome-section {
+  background-color: #c6c9ce;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  display: block;
+  margin: 30px 0 15px 0;
+}
+
+#welcome-section p {
+  color: green;
+  font-size: 1.2em;
+}
+
+#projects-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.project-tile {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background-color: #eaddff;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+#projects h1 {
+  color: #636d7c;
+  }
+
+#contact {
+  min-height: 40vh;
+  background-color: #d4fcb5;
+  text-align: center;
+}
+
+#contact h1 {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+#contact p {
+  font-size: 1.2em;
+
+}
+
+#contact > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-bottom: 70px;
+}
+
+#contact a {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 50px 30px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: hsl(217, 74%, 38%);
+  background-color: hsl(189, 74%, 80%);
+  border: 1px solid hsl(217, 74%, 38%);
+}
+
+#contact a:hover {
+  color: hsl(108, 74%, 38%);
+  background-color: hsl(189, 74%, 90%);
+  border: 1px dashed hsl(108, 74%, 38%);
+}
+
+.project-tile img {
+  display: block;
+  width: 298px;
+  border-bottom: 1px solid black;
+}
+
+.project-tile h2 {
+  display: block;
+  margin: auto;
+  font-size: 2em;
+}
+
+@media all and (max-width: 500px) {
+  nav ul {
+    justify-content: space-around;
+  }
+}
